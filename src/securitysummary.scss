@@ -1,0 +1,92 @@
+.secsum {
+
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+
+  .bigNumber {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .mediumNumber {
+    font-size: 24px;
+  }
+
+  .tag {
+    width: 83.4px;
+    margin: 24px;
+  }
+
+  .left {
+
+  }
+
+  .infobox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'CiscoSansReg';
+    margin: 40px;
+  }
+
+  .infobox > div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  span > span {
+    padding: 0px !important;
+  }
+
+  .infobox span {
+    padding: 10px;
+  }
+
+
+  .infoSection {
+    width: 540px;
+    font-family: "CiscoSansBold";
+  }
+
+  .titleSection {
+    width: 540px;
+  }
+
+  .byAttack {
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    align-items: left;
+
+    span:last-child() {
+      color: blue;
+    }
+
+    .box {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: left;
+
+      span:not(.mediumNumber) {
+        font-size: 16px;
+      }
+
+    }
+
+    .row {
+       display: flex;
+       width: 100%;
+    }
+
+
+
+  }
+
+
+
+}

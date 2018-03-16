@@ -1,0 +1,171 @@
+/*
+body {  
+  background-color: #f5f5f5;
+}*/
+.home {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /*max-width: 1600px;*/
+  align-items: top;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /*background-color: #333;*//*
+  font-family: 'Open Sans', sans-serif;*/
+
+  .aboutme {
+    flex: 1 1 30%;
+    min-width: 280px;
+    max-width: 310px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    /*background-color: #f5f5f5;*/
+    /*overflow: hidden;*/
+  }
+  .projects {
+    flex: 1 1 55%;
+    padding: 24px 8px;
+    padding-left: 310px;
+    display: flex;
+    height: 100%;
+    /*overflow-y: scroll;*/
+    /*background-color: #f5f5f5;*/
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .contact {
+    display: flex;
+    /*margin-bottom: 100px;*/
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+  .thumbnail {
+    flex: 1 1 30%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 16px 8px 8px 8px;
+    /*height: 300px;*/
+    background-position: center center;
+    background-size: cover;
+    /*border: 1px solid #dadada;*/
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+
+    .pagelink {
+      width: 100%;
+    }
+
+    .pic {
+      min-width: 100%;
+      height: 240px;
+      background-position: center center;
+      background-size: cover;
+      border-radius: 4px;
+      /*box-shadow: 0 -1px 1px 0 rgba(0,0,0,.05), 0 1px 3px 0 rgba(0,0,0,.14);*/
+    }
+  }
+
+
+/*  .thumbnail:hover div{
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+   }*/
+
+  .social {
+    height: 24px;
+    width: 24px;
+    margin: 4px 8px;
+    display: inline-block;
+    background-size: cover;
+  }
+  .social:first-child {
+    margin-left: 0;
+  }
+
+  #twitter {
+    background-image: url('../assets/thumbnail/twitter.png');
+  }
+  #github {
+    background-image: url('../assets/thumbnail/github.png');
+  }
+  #github:hover {
+    background-image: url('../assets/thumbnail/github1.png');
+  }
+  #twitter:hover {
+    background-image: url('../assets/thumbnail/twitter1.png');
+  }
+  #linkedin {
+    background-image: url('../assets/thumbnail/linkedin.png');
+  }
+  #linkedin:hover {
+    background-image: url('../assets/thumbnail/linkedin1.png');
+  }
+
+  .mypic {
+    width: 55%;
+    height: auto;
+    margin: 40px 20px 16px 20px;
+  }
+  .myintro {
+    width: 80%;
+    color: #333;
+
+    b {
+      color: #1EAEDB;
+      font-weight: 400;
+    }
+    p {
+      margin-bottom: 1em;
+    }
+  }
+
+  .cardtitle {
+    /*position: absolute;*/
+    text-decoration-line: none;
+    font-size: 16px;
+    /*font-weight: 700;*/
+    padding: 8px 8px 0px 8px;
+    color: #111;
+
+    .caption {
+      font-size: 14px;
+      font-weight: 400;
+      color: #888;
+      margin-top: 0px;
+      margin-bottom: 8px;
+    }
+  }
+  img {
+    width: 400px;
+    height: 300px;
+  }
+}
+
+/* For devices larger than 750px */
+@media (max-width: 680px) {
+  .home {
+    height: 100%;
+
+    .aboutme {
+      flex-grow: 1 auto;
+      max-width: 1000px;
+      position: relative;
+    }
+    .projects {
+      padding-left: 0;
+    }
+  }
+}
+
+
