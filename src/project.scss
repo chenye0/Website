@@ -215,6 +215,8 @@ figurecaption {
 
   p { 
     /*font-weight: 300;*/
+    max-width: 560px;
+    align-self: center;
   }
   img {
     width: 40%;
@@ -395,9 +397,10 @@ video {
      color: white;
     }
   }
-  .reportbtn{
+  .reportbtn {
     background-color: #576DEB;
     border: none;
+    align-self: center;
     a {
      color: white;
     }
@@ -519,11 +522,6 @@ button {
   font-size: 14px;
   margin-right: 16px;
 }
-/*button:hover {
-  a {
-    opacity: 0.8;
-  }
-}*/
 
 .footer {
   /*background-color: #333;*/

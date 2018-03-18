@@ -17,12 +17,11 @@ class Home extends React.Component {
       return (
         <div className={style.home}>
           <div className={style.aboutme}> 
-              <img alt="" className={style.mypic} src={selfpic}></img> 
               <div className={style.myintro}>
-                  <h3>Hi! I am Chen Ye. </h3>
+                  <h3>Hello! I am Chen Ye.</h3>
                   <p>I am a product designer based in San Francisco Bay Area.</p>
                   <p>Currently I am designing with big data for Cisco, to help security practitioners hunt for network threats and protect people.</p>
-                  <p>You can view my resume <a href='https://drive.google.com/open?id=19152lISm5s70YAvs0JpqBjssiNMGjkaP'>here</a>. Please feel free to contact me at <a href="mailto:yechen0712@gmail.com">yechen0712@gmail.com</a>.</p>
+                  <p>You can read more <Link className={style.pagelink} to="/Aboutme">about me</Link>, view my <a href='https://drive.google.com/open?id=19152lISm5s70YAvs0JpqBjssiNMGjkaP'>resume</a>, or email me at <a href="mailto:yechen0712@gmail.com">yechen0712@gmail.com</a>.</p>
               </div> 
               <div className={style.contact}>
                 <div> 

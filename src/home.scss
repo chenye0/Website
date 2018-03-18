@@ -11,8 +11,6 @@ body {
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
-  /*background-color: #333;*//*
-  font-family: 'Open Sans', sans-serif;*/
 
   .aboutme {
     flex: 1 1 30%;
@@ -25,8 +23,6 @@ body {
     position: fixed;
     top:0;
     left: 0;
-    /*background-color: #f5f5f5;*/
-    /*overflow: hidden;*/
   }
   .projects {
     flex: 1 1 55%;
@@ -34,8 +30,6 @@ body {
     padding-left: 310px;
     display: flex;
     height: 100%;
-    /*overflow-y: scroll;*/
-    /*background-color: #f5f5f5;*/
     flex-flow: row wrap;
     justify-content: space-between;
   }
@@ -76,11 +70,11 @@ body {
   }
 
 
-/*  .thumbnail:hover div{
-    -moz-transform: scale(1.05);
-    -webkit-transform: scale(1.05);
-    transform: scale(1.05);
-   }*/
+  .thumbnail:hover{
+    -moz-transform: scale(1.03);
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+   }
 
   .social {
     height: 24px;
@@ -120,7 +114,10 @@ body {
   .myintro {
     width: 80%;
     color: #333;
-
+    padding-top: 32px;
+    h3 {
+      margin-top: 0px;
+    }
     b {
       color: #1EAEDB;
       font-weight: 400;
@@ -151,6 +148,38 @@ body {
     height: 300px;
   }
 }
+
+.about {
+  padding: 16px 8%;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1em;
+  div {
+    min-width: 350px;
+  }
+  .mypic {
+    padding:  5% 10%;
+    height: auto;
+  /*margin: 40px 20px 16px 20px;*/
+  }
+.myintro {
+  padding: 5%;
+  color: #333;
+
+  h3 {
+    margin-top: 0px;
+  }
+  b {
+    color: #1EAEDB;
+    font-weight: 400;
+  }
+  p {
+    margin-bottom: 1em;
+  }
+}
+
+}
+
 
 /* For devices larger than 750px */
 @media (max-width: 680px) {
