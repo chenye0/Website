@@ -58,7 +58,7 @@ class Home extends React.Component {
                   </div>
                   <div className={style.cardtitle}>
                       City Facts
-                      <p className={style.caption}>Visualization tool for exploring major U.S. cities </p>
+                      <p className={style.caption}>Visualization tool for relocation factors</p>
                   </div>
                 </Link>
               </div> 

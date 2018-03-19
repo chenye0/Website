@@ -46,13 +46,13 @@ class Mobile extends React.Component {
             </div>
           </section>
           <section className={'ten columns ' + style.center}>
+            <figure className={'seven columns'}>
+               <img className={style.embedimg} alt="" src={context}></img> 
+            </figure>
             <div className={'five columns ' + style.side }>
                 <h5>Contextual Inquiry</h5>
                 <p>This method gave us a much stronger picture as to who our audience is, what are their true struggles when it comes to budgeting, and how they might be addressing those struggles (either successfully or not successfully) today. One key insight derived here was that roommates often share expenses and monetary resources.</p>
             </div>
-            <figure className={'seven columns'}>
-               <img className={style.embedimg} alt="" src={context}></img> 
-            </figure>
           </section>
           <section className={'ten columns ' + style.center}>
             <figure className={'seven columns'}>

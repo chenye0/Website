@@ -78,7 +78,7 @@ class SecurityTool extends React.Component {
 		    
 		        <figure className={'eight columns ' + style.shadow}>
 		          <img alt="" src={geo} className={style.shadow}></img> 
-		          <figurecaption>Investigate UI Geomap</figurecaption>
+		          <figurecaption>Investigate Geomap</figurecaption>
 		        </figure>
 		        <section className={'eight columns'}>
 	          	   <h5>Bulk Analysis Dashboard</h5>

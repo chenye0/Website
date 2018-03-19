@@ -31,7 +31,7 @@ class FfRedesign extends React.Component {
         	<CloseNav/>
 			<div className={style.titlesection} style={{backgroundImage: 'url(' + bg + ')', height: '520px'}}>	
 				<h1>FarmerFrog Website Design</h1>
-			    <p>A website redesign for Farmer Frog, a non-profit organization that supports local ecosystems and communities through the hands-on experience of restoring urban ecosystems by means of sustainable agriculture.</p>
+			    <p>A website redesign for Farmer Frog, a non-profit organization that teaches children and families grow food.</p>
 			</div>  
 			<div className={style.overview}>
 				<div className={'eight columns'}>

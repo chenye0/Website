@@ -27,7 +27,7 @@ class FfRedesign extends React.Component {
 				<section className={'eight columns'}>
 	          	  <h4>Project Overview</h4>
 	          	  <p>Umbrella Security Report is an interactive web application for helping customers uncover their network threats, and understand how Cisco Umbrella can protect them. It turns complex security data into concrete and understandable data visualizations.</p>
-	          	  <button className={style.reportbtn}><a href=''>View Site</a></button>
+	          	  <button className={style.reportbtn}><a href='https://security-report.umbrella.com'>View Site</a></button>
 	          	  <h5>My Role</h5>
 	              <p>I am the only designer working through the project since the initial kickoff meeting. I worked with a front-end engineer and a back-end engineer.</p>
 	              <p>I was responsible for all the design executions and validations. I presented works to gain buy-in from executives and other teams for feedback. I built prototypes for some animations and interactions using JavaScript and CSS.</p>

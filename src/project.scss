@@ -112,15 +112,9 @@ img.shadow {
   height: 100vh;
 }
 
-/*.viewer {
-  position: absolute;
-  border: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
+.cityvizdemo {
+  padding: 0 10%;
 }
-*/
 section {
   margin-top: 30px;
   margin-bottom: 10px;
@@ -299,13 +293,11 @@ ul, ol{
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
-
   img {
     width: 50%;
     margin: auto;
     /*height: 30%;*/
   }
-
   li {
     display: flex;
     flex-direction: column;
@@ -313,6 +305,11 @@ ul, ol{
     margin-right: 20px;
     padding: 0 4%;
   }
+}
+.threelists {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -328,8 +325,6 @@ video {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /*align-content: flex-start;*/
-  /*align-items: center;*/
 
   div {
     flex-grow: 0;
@@ -365,9 +360,9 @@ video {
     color: gray;
   }
   p.question {
-    padding: 0 2em 1em 2em;
+    padding: 0% 10% 5% 10%;
     font-size: 24px;
-    color: #1EAEDB;
+    color: #576DEB;
     /*line-height: 1.2;*/
   }
   span.quote {
@@ -388,7 +383,6 @@ video {
     text-transform: uppercase;
     margin-bottom: 0;
   }
-
   .actionbtn {
     margin-top: 2em;
     background-color: #07895f;
@@ -532,6 +526,5 @@ button {
   justify-content: space-between;
   align-content: space-around;
   flex-wrap: wrap;
-
 }
 

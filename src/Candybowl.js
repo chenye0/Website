@@ -65,11 +65,13 @@ class CandyBowl extends React.Component {
               <h6>Discover</h6>
               <h4>The Problem</h4>
               <p>The current problem stated by the department office staff is that, even though a wide variety of candy is available, visitors to the candy bowl tend to select only specific types of candy, causing it to run out more quickly and leaving less variety for later visitors. This happens because the candy taker’s behavior is motivated by sensation, which drives them to select what they perceive to be the best-tasting candy. The candy bowl is also a hassle to refill, leaving the candy bowl manger to believe it should be maintained by everyone in the office. </p>
-              <h4>What happens around a candy bowl?</h4>
+              <h5>What happens around a candy bowl?</h5>
               <p>We took this as an opportunity to study around a artifact that people take for granted. We started with a literature review to gain an understanding of the psychology around changing people’s behavior and to learn about <span className={style.emp}>gamification</span>. We interviewed candy bowl managers(a title we made up for easy reference) to better understand problems that surround the candy bowl in the department. </p>
               <p>With the information we gathered, we conducted affinity diagraming and drew out three common themes alongside key insights that drove our design efforts.</p>
           </section>
-          <img className={style.embedimg} alt="" src={insight}></img> 
+          <figure className={'ten columns'}>
+              <img alt="" src={insight}></img>
+          </figure>
           <section className={'eight columns'}>
               <h4>Ideation</h4>
               <p>Thinking out of screen and ideating around a solution with physical form opened up our imagination. I had one of the most fun brainstorming sessions: We came up with a wide variety of systems that could meet the needs we uncovered. However, being aware of the upcoming workload of prototyping, the ideas were narrowed down to a single physical form with three possible digital interactions.</p>
@@ -81,7 +83,7 @@ class CandyBowl extends React.Component {
           </figure>
           <figure className={'ten columns'}>
               <img alt="" src={ideas}></img>
-              <figurecaption>Sketch</figurecaption>
+              <figurecaption>Figure. Sketches</figurecaption>
           </figure>
           <section className={'eight columns'}>   
               <h6>First Iteration</h6>   
@@ -117,33 +119,34 @@ class CandyBowl extends React.Component {
            
           </section>
           <h2>Introducing...Sweet Treat</h2>
-          <h5>Key Feature 1: Interactive Challenge</h5>
           <section className={'ten columns ' + style.center}>
             <figure className={'seven columns'}>
               <img className={style.shadow} alt="" src={feature1}></img> 
               <figurecaption>A teacher plays with Sweet Treat for candy on showcase day</figurecaption>
             </figure>
             <div className={'six columns ' + style.side} >
+              <h5>Key Feature 1: Interactive Challenge</h5>
               <p>In order to make candy consumption sustainable, we needed to limit the user’s access to the better candy. We designed the digital challenge for which users must complete in order to earn the better candy reward. To encourage them to play the challenge,  we‘ve made the drawer containing the better candy transparent.</p>
             </div>
           </section> 
-          <h5>Key Feature 2: Grab & Go</h5>
+
           <section className={'ten columns ' + style.center}>
             <figure className={'seven columns'}>
               <img className={style.shadow} alt="" src={feature2}></img> 
               <figurecaption>A student gets a candy from Grab & Go tray</figurecaption>
             </figure>
             <div className={'six columns ' + style.side}>
+              <h5>Key Feature 2: Grab & Go</h5>
               <p>Considering those who just need a quick fix, we designed a tray at the top of the machine where users can grab a piece of candy without completing a challenge. This section will initially be filled with less desirable and cheaper candy than the candy in the drawer, but can be added to by users who want to share extra candy they earned by playing games, as encouraged by prompts on the screen.</p>
             </div>
           </section>
-          <h5>Key Feature 3: Autofilling</h5>
           <section className={'ten columns ' + style.center}>
             <figure className={'seven columns'}>
               <img className={style.shadow} alt="" src={feature3}></img> 
               <figurecaption>The detail view of the drawer filled with candy</figurecaption>
             </figure>
             <div className={'six columns ' + style.side}>
+               <h5>Key Feature 3: Autofilling</h5>
               <p>The refilling drum, which is divided into 4 sections, is the main candy storage. It can refill the drawer 4 times by rotating itself, as soon as the IR sensors detects the drawer is almost empty. We designed this because one of the problems stated was that refilling the candy bowl is a hassle. So, we designed Sweet Treat to have a large candy storage and the ability to refill itself, which reduces the frequency of refilling.</p>
             </div>
           </section> 
