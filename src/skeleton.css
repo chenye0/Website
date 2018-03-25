@@ -169,9 +169,9 @@ input[type="button"] {
   display: inline-block;
   height: 40px;
   padding: 0 32px;
-  color: #555;
+  color: #333;
   text-align: center;
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 40px;
   letter-spacing: .1rem;
@@ -193,8 +193,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
+  color: #666;
+  border-color: #ccc;
   outline: 0; }
 .button.button-primary,
 button.button-primary,

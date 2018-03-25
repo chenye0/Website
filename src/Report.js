@@ -7,7 +7,7 @@ import bg from '../assets/Report/bg_dark.png'
 import prob1  from '../assets/Report/prob1.png'
 import prob2  from '../assets/Report/prob2.png'
 // import prob3  from '../assets/Report/prob3.png'
-import data  from '../assets/Report/Narrative.png'
+import data  from '../assets/Report/Narrative2.png'
 import summary from '../assets/Report/summary1.png'
 import animation from '../assets/Report/overview.mp4'
 import infragraph from '../assets/Report/infragraph.mp4'
@@ -19,7 +19,7 @@ class FfRedesign extends React.Component {
     return (
   		<div className={style.wrapper}>
         	<CloseNav/>
-			<div className={style.titlesection} style={{backgroundImage: 'url(' + bg + ')', height: '480px'}}>
+			<div className={style.titlesection} style={{backgroundImage: 'url(' + bg + ')', height: '450px'}}>
 			    <h1>Cisco Umbrella Security Report</h1>
 			    <p>How might we help customers uncover their network threats and understand the value of the product?</p>
 			</div>
@@ -27,7 +27,6 @@ class FfRedesign extends React.Component {
 				<section className={'eight columns'}>
 	          	  <h4>Project Overview</h4>
 	          	  <p>Umbrella Security Report is an interactive web application for helping customers uncover their network threats, and understand how Cisco Umbrella can protect them. It turns complex security data into concrete and understandable data visualizations.</p>
-	          	  <button className={style.reportbtn}><a href='https://security-report.umbrella.com'>View Site</a></button>
 	          	  <h5>My Role</h5>
 	              <p>I am the only designer working through the project since the initial kickoff meeting. I worked with a front-end engineer and a back-end engineer.</p>
 	              <p>I was responsible for all the design executions and validations. I presented works to gain buy-in from executives and other teams for feedback. I built prototypes for some animations and interactions using JavaScript and CSS.</p>
@@ -43,7 +42,7 @@ class FfRedesign extends React.Component {
 			<div className={style.content}>
 		        <section className={'eight columns'}>
 	          	  <h4>Background</h4>
-	          	  <p>Cisco Umbrella is a cloud platform that provides DNS layer security to enterprises. Currently organizations that are interested in our product can sign up for free trials. At the end of the trial, internal sales engineers will gather and analyze all the threats identified during the trial, and then put together a pdf report to present to potential customers. The process is usually referred as proof of value (POV), which demonstrates the efficacy of the product, and is critical to business success.</p> 
+	          	  <p>Cisco Umbrella is a cloud platform that provides DNS layer security. Currently organizations that are interested in our product can sign up for free trials. At the end of the trial, internal sales engineers will gather and analyze all the threats identified during the trial, and then put together a pdf report to present to potential customers. The process is usually referred as proof of value (POV), which demonstrates the efficacy of the product, and is critical to business success.</p> 
 		        </section> 
 		         <section className={'eight columns'}>
 	          	  <h4>The problem</h4>     	  
@@ -60,7 +59,7 @@ class FfRedesign extends React.Component {
 		           <p>The primary persona is <b>potential customer</b> who is interested in our security product, and need to understand how effective our product is. The main stakeholder is <b>internal sales engineer</b>, who really need an efficient way to analyze an organizations’ threats and present the results to engage their potential customers. </p>
 		     	</section>
 		        <section className={'eight columns'}>
-		          <h6>The Process</h6>
+		          <span className={style.sectiontitle}>The Process</span>
 	              <h4>Direction</h4>
                   <p>After initial ideation, we decided on a high level design direction: build a web application utilizing storytelling with interactive data visualizations, because:</p>
                     <ul>
@@ -117,9 +116,9 @@ class FfRedesign extends React.Component {
 		         </section>
 		         <section className={'eight columns'}>
 	          	  <h4>Outcome</h4>
-	              <p>In Nov 2016, we shipped alpha version internally. Since then, sales engineers and customer success team started trying it out, and now they use it in their daily work.</p>
+	              <p>In Nov 2016, we shipped alpha version internally. Since then, sales engineers and customer success team started using it, and now they've adopted it in the daily work.</p>
 	              <p>In March 2017, it was released to broader Cisco including partners around the world. Meanwhile, <a href='https://learn-umbrella.cisco.com/solution-briefs/umbrella-security-report'>a marketing solution brief</a> has been published.</p>
-	              <p>The project is successfully built out from a culture around shipping fast and deploying constantly. It has brought huge value to our customers, internal teams and the business unit.</p>
+	              <p>The project is successfully built out of a culture around shipping fast and deploying constantly. It has brought huge value to our customers, internal teams and the business unit.</p>
 	            </section>  
 	            {/*
 		         <section className={'eight columns'}>

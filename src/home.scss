@@ -159,27 +159,28 @@ body {
   margin: auto;
   div {
     min-width: 350px;
+  
   }
   .mypic {
-    padding:  5% 10%;
     height: auto;
+      padding: 5%;
   /*margin: 40px 20px 16px 20px;*/
   }
-.myintro {
-  padding: 5%;
-  color: #333;
-
-  h3 {
-    margin-top: 0px;
+  .myintro {
+    color: #333;
+    padding: 5%;
+    h3 {
+      margin-top: 0px;
+    }
+    p {
+      margin-bottom: 1em;
+    }
   }
-  b {
-    color: #1EAEDB;
-    font-weight: 400;
+  button {
+    margin-top: 1.5em;
+    color : #333;
+    border: 1px solid #bbb;
   }
-  p {
-    margin-bottom: 1em;
-  }
-}
 
 }
 

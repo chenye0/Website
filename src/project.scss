@@ -90,9 +90,9 @@ img.shadow {
   text-decoration-line: none;
   font-size: 1.5em;
   right: 16px;
-  top: 10px;
-  width: 28px;
-  line-height: 28px;
+  top: 16px;
+  width: 32px;
+  line-height: 32px;
   position: fixed;
   svg:hover{
     fill:  #666;
@@ -177,7 +177,7 @@ figurecaption {
   font-style: italic;
 }
 
-.titlesection {
+.titlesection,.titlewhitebg {
   width: 100%;
   height: auto;
   background-color: #222;
@@ -185,7 +185,7 @@ figurecaption {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
   justify-content: center;
   padding: 5% 5% 7% 5%;
   font-size: 18px;
@@ -237,6 +237,18 @@ figurecaption {
     }
     
   }
+}
+
+.titlewhitebg {
+  background-color: #fff;
+  color: #333;
+  padding-bottom: 0px;
+  p { 
+    max-width: 760px;
+    align-self: center;
+    margin-top: 2em;
+  }
+
 }
 
 .grouptitle {
@@ -378,14 +390,22 @@ video {
     margin-bottom: 1em;
   }
   h6 {
+    font-size: 16px;
+    color: #222;
+    font-weight: 700;
+    margin-bottom: 1em;
+  }
+  .sectiontitle {
     font-size: 15px;
-    color:#222;
+    font-weight: 700;
+    color:#444;
     text-transform: uppercase;
     margin-bottom: 0;
   }
   .actionbtn {
     margin-top: 2em;
     background-color: #07895f;
+    color: white;
     border: none;
     a {
      color: white;
@@ -502,6 +522,17 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
+    button {
+      border: none;
+      color: white;
+      font-size: 14px;
+      margin-right: 16px;
+    }
+    button:hover {
+      font-size: 14px;
+      color: #aaa;
+    }
+
 }
 
 .navbtn {
@@ -510,13 +541,6 @@ video {
   justify-content: flex-end;
 
 }
-
-button {
-  border:none;
-  font-size: 14px;
-  margin-right: 16px;
-}
-
 .footer {
   /*background-color: #333;*/
   width: 100%;

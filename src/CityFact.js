@@ -39,13 +39,13 @@ class FfRedesign extends React.Component {
 	          	  <h4>Project Overview</h4>
 	          	  <p>City Facts is an interactive visualization tool, which allow users to explore factors that affect living in different cities, such as <b>demographics, climate and economy</b>. All the data we provided in this tool comes from various government websites. It is built in Tableau.</p>
 	          	  <h5>My Role</h5>
-	              <p>During design phase I created wireframe and interactive prototypes for half of the graphs and I built the final dashboard tool with all the iterations. I collaborated with three other team members, and we shared all the tasks regarding user research, define problems and data preparation.</p>
+	              <p>During design phase I created wireframe and interactive prototypes for half of the graphs and I built the final dashboard tool with all the iterations. I collaborated with three team members and shared all the tasks regarding user research, testing and data preparation.</p>
 		        </section> 
 		    </div>
 			<div className={style.content}>
 		        <section className={'eight columns'}>
 		          <h4>The Problem</h4>
-	              <p>Open government data is invaluable due to its neutrality and comprehensiveness. However, it’s hard to work with and get the value out since the data usually sits in massive surveys and tables that are scattered over various government websites. Thus our initial goal is to help people make informed life decisions such as relocation by presenting government data in a consumable and useful way. We focused on the following design question:</p>
+	              <p>Open government data is invaluable due to its neutrality and comprehensiveness. However, it’s hard to work with and get the value out since the data usually sits in massive surveys and tables that are scattered over various government websites. Thus our initial goal is to help people make informed life decisions such as relocation by presenting government data in a consumable and useful way. We focused on the following question:</p>
 	               <p className={style.question}>How can we present complex government data to help people visualizing relocating factors?</p>
 	          	  <h4>User Research</h4>
 	              <p>Our team started with a mind mapping exercise to explore all the factors around living in a city. Then we conducted user interviews with seven participants to ask them what they care when they consider relocation and asked them to rank 8 common relocation factors. The top five relocation factors are: job opportunity, cost of living, environment, recreation, family-related.</p>
@@ -129,7 +129,7 @@ class FfRedesign extends React.Component {
 		         	<img className={style.cityvizdemo} alt="" src={demo}></img> 
 		         </figure> 
 		         <section className={'eight columns'}>
-		            <h4>Reflection</h4>
+		            <h4>Takeaways</h4>
 		         	<p>This project leads me into the amazing world of data visualization and information design. There are a few guidelines I’ve kept in mind ever since:</p> 
 		         	  <ul>
 			              <li>Encode the most important information in the most effective way, based on deep understanding of human perception.</li>

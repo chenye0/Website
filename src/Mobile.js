@@ -19,7 +19,7 @@ class Mobile extends React.Component {
     return (
       <div className={style.wrapper}>
         <CloseNav/>
-        <div className={style.titlesection} style={{backgroundImage: 'url(' + bg + ')', height: '500px'}}>
+        <div className={style.titlesection} style={{backgroundImage: 'url(' + bg + ')', height: '450px'}}>
           <h1>Wishes Come True</h1>
           <p>How can we help college students understand the value of budget and support them to create and maintain a budget?</p>   
         </div> 
@@ -28,7 +28,7 @@ class Mobile extends React.Component {
               <h4>Project Overview</h4>
               <p>Wishes come true is a mobile app that help students understand the value of maintaining a budget in a way that is not “heavy-handed” and perhaps enjoyable. The use of the wish-list concept allows it to express the value of budgeting in a way that is connected to the user’s wants and desires — which is very different from the unemotional process that a user would experience via a traditional budgeting app.</p>
               <h5>My Role</h5>
-              <p>This was a course project at the University of Washington. Within ten weeks, I worked with two other team members and worked throughout the complete UCD process from user discover phase, to concept generation, prototyping and evaluation.</p>
+              <p>Within ten weeks, I worked with two other team members through the complete UCD process from user discover phase, to concept generation, prototyping and evaluation. This was a course project at the University of Washington.</p>
           </div>
         </div>
         <div className={style.content}>
@@ -86,7 +86,7 @@ class Mobile extends React.Component {
               <p>Based on the basic concept of wishlist, we sketched out the user task flow, basic UI components and interactions on the whiteboard. Then we started prototyping in Axure, gradually from low-fidelity to higher fidelity prototype. You can play with the <a href="https://90cg1g.axshare.com/#p=task_1_-_sign_up_and_create">interactive prototype</a>. We focused on refining the interaction of four core user scenarios we want to test with users:</p> 
               <ul className={style.compactlist}>
                 <li>Create a wishlist</li>
-                <li>Add an Expense manually</li>
+                <li>Add an expense manually</li>
                 <li>View the progress of wishlist</li>
                 <li>View and edit a budget after using for a certain time period</li>
               </ul>

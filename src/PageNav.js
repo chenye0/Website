@@ -17,7 +17,7 @@ class PageNav extends React.Component {
     return (
       <div className={style.projectnav}> 
         <div className={style.navbtn}>
-          <button> <Link to={this.props.nextPage}>Next - {map[this.props.nextPage]}</Link></button>
+          <Link to={this.props.nextPage}><button>Next - {map[this.props.nextPage]} </button></Link>
         </div>
       </div>
     )

@@ -30,14 +30,13 @@ class CandyBowl extends React.Component {
     return (
       <div className={style.wrapper}>
         <CloseNav/>
-        <div className={style.titlesection} style={{backgroundImage: 'url(' + bg + ')', height: '486px'}}>
+        <div className={style.titlesection} style={{backgroundImage: 'url(' + bg + ')', height: '480px'}}>
           <h1>Reimagine the Candy Bowl Experience</h1>
           <p>Have you ever thought about how a candy bowl changes the environment it’s in?</p>   
         </div> 
         <div className={style.overview}>
           <div className={'eight columns'}>
               <h4>Project Overview</h4>
-              <h5>The Result</h5>
               <p>We created Sweet Treat, a candy machine that, is sustainable in the variety of candy it provides, automatically refills itself, and promotes positive social interactions surrounding it in the office.</p>
               <h5>My Role</h5>
               <p>As a design technologist, I worked through consolidating user research findings into various design concepts, to the two prototype iterations with two other team members. I mainly designed the digital experience and developed the interface including the challenges, and contributed most to the electronic prototyping.</p>
@@ -62,7 +61,6 @@ class CandyBowl extends React.Component {
         </div> */}
         <div className={style.content}>
           <section className={'eight columns'}>
-              <h6>Discover</h6>
               <h4>The Problem</h4>
               <p>The current problem stated by the department office staff is that, even though a wide variety of candy is available, visitors to the candy bowl tend to select only specific types of candy, causing it to run out more quickly and leaving less variety for later visitors. This happens because the candy taker’s behavior is motivated by sensation, which drives them to select what they perceive to be the best-tasting candy. The candy bowl is also a hassle to refill, leaving the candy bowl manger to believe it should be maintained by everyone in the office. </p>
               <h5>What happens around a candy bowl?</h5>
@@ -86,12 +84,13 @@ class CandyBowl extends React.Component {
               <figurecaption>Figure. Sketches</figurecaption>
           </figure>
           <section className={'eight columns'}>   
-              <h6>First Iteration</h6>   
+              <span className={style.sectiontitle}>First Iteration</span> 
               <h4>Prototyping</h4> 
               <p>We decided to go with cardboard for first iteration. As for the on-screen part, I built a website to host the challenges, to be displayed in a smartphone. </p>
           </section>
           <figure className={'eight columns'}>
-              <img className={style.embedimg} alt="" src={prototype1}></img> 
+              <img alt="" src={prototype1}></img> 
+              <figurecaption>Figure. The Cardboard Prototype</figurecaption>
           </figure>
           <section className={'eight columns'}>    
               <h4>Evaluation</h4> 
@@ -99,7 +98,8 @@ class CandyBowl extends React.Component {
               <p>Ultimately, we had 7 participants complete our study, and we uncovered a variety of information. Unfortunately, we did not have enough participants complete the survey for each challenge to make the data generalizable, so our findings primarily came from the comments made by participants as they interacted with the prototype.</p>
           </section>
           <figure className={'eight columns'}>
-              <img className={style.embedimg} alt="" src={usability}></img> 
+              <img className={style.embedimg} alt="" src={usability}></img>
+              <figurecaption>Figure. Hallway user testing</figurecaption> 
           </figure>
           <section className={'eight columns'}>    
               <h4>The Final Prototype</h4> 
@@ -122,7 +122,7 @@ class CandyBowl extends React.Component {
           <section className={'ten columns ' + style.center}>
             <figure className={'seven columns'}>
               <img className={style.shadow} alt="" src={feature1}></img> 
-              <figurecaption>A teacher plays with Sweet Treat for candy on showcase day</figurecaption>
+              <figurecaption>Figure. A teacher plays with Sweet Treat for candy</figurecaption>
             </figure>
             <div className={'six columns ' + style.side} >
               <h5>Key Feature 1: Interactive Challenge</h5>
@@ -133,7 +133,7 @@ class CandyBowl extends React.Component {
           <section className={'ten columns ' + style.center}>
             <figure className={'seven columns'}>
               <img className={style.shadow} alt="" src={feature2}></img> 
-              <figurecaption>A student gets a candy from Grab & Go tray</figurecaption>
+              <figurecaption>Figure. A student gets a candy from Grab & Go tray</figurecaption>
             </figure>
             <div className={'six columns ' + style.side}>
               <h5>Key Feature 2: Grab & Go</h5>
@@ -143,7 +143,7 @@ class CandyBowl extends React.Component {
           <section className={'ten columns ' + style.center}>
             <figure className={'seven columns'}>
               <img className={style.shadow} alt="" src={feature3}></img> 
-              <figurecaption>The detail view of the drawer filled with candy</figurecaption>
+              <figurecaption>Figure. The detail view of the drawer filled with candy</figurecaption>
             </figure>
             <div className={'six columns ' + style.side}>
                <h5>Key Feature 3: Autofilling</h5>

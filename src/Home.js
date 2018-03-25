@@ -19,7 +19,7 @@ class Home extends React.Component {
           <div className={style.aboutme}> 
               <div className={style.myintro}>
                   <h3>Hello! I am Chen Ye.</h3>
-                  <p>I am a product designer based in San Francisco Bay Area.</p>
+                  <p>I am a user experience designer based in San Francisco Bay Area.</p>
                   <p>Currently I am designing with big data for Cisco, to help security practitioners hunt for network threats and protect people.</p>
                   <p>You can read more <Link className={style.pagelink} to="/Aboutme">about me</Link>, view my <a href='https://drive.google.com/open?id=19152lISm5s70YAvs0JpqBjssiNMGjkaP'>resume</a>, or email me at <a href="mailto:yechen0712@gmail.com">yechen0712@gmail.com</a>.</p>
               </div> 

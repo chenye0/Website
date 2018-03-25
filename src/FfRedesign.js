@@ -29,7 +29,7 @@ class FfRedesign extends React.Component {
     return (
   		<div className={style.wrapper}>
         	<CloseNav/>
-			<div className={style.titlesection} style={{backgroundImage: 'url(' + bg + ')', height: '520px'}}>	
+			<div className={style.titlesection} style={{backgroundImage: 'url(' + bg + ')', height: '480px'}}>	
 				<h1>FarmerFrog Website Design</h1>
 			    <p>A website redesign for Farmer Frog, a non-profit organization that teaches children and families grow food.</p>
 			</div>  
@@ -58,7 +58,7 @@ class FfRedesign extends React.Component {
 		          <figurecaption>Old FarmerFrog website home page, with three-level drop down menu.</figurecaption>
 		        </figure>
 		        <section className={'eight columns'}>
-		          <h6>The Discovery</h6>
+		          <span className={style.sectiontitle}>The Discovery</span>
 	              <h4>Business Goals</h4>
 	              <p>We met with our stakeholders to better understand their business. They didn’t have a specific goal in mind for this particular redesign. However after a few further conversations with the stakeholders, we identified their primary business goals.</p>
 	            </section> 
@@ -81,20 +81,17 @@ class FfRedesign extends React.Component {
 	              <img className={style.embedimg} alt="" src={persona}></img> 
 	            </figure>
 	            <section className={'eight columns'}>
-	              <h6>The Approach</h6>
+	              <span className={style.sectiontitle}>The Approach</span>
 	              <h4>Task Matrix & Card Sorting</h4>
 	              <p>We created a persona-based task matrix that helped us understand the frequency of different tasks. We then transferred the task list into a open card sorting exercise, with an online software <span className={style.emp}>OptimalSort</span>. In our setting the users can create categories and drag the cards they see fit into that category.</p>
                   <p>This was a critical step in the redesign. By laying out the groups of cards participants put together, we understand what content they see as related, as well as what terms they would recognize and use. For instance, multiple users sorted cards within Education V.S. community, which ended up being two items in main nav. It wasn’t as easy to align all the other categories, since they varied a lot across different participants. There was one interesting finding, where a user apparently created a category with 24 cards and named it “Delete these items”. </p>
-	            </section>  
-	            <figure className={'eight columns'}>
 	              <img className={style.embedimg} alt="" src={cardsort}></img> 
-	            </figure>
-	            <section className={'eight columns'}>
                   <p>After spending much time on affinity diagramming and going back to the original research data points, we came up with the new information architecture of the site.</p>
                 </section> 
-	              <img className={style.embedimg} alt="" src={imgIA}></img> 
+                <section>
+	             	<img className={style.embedimg} alt="" src={imgIA}></img> </section> 
 	            <section className={'eight columns'}>   
- 	                <h6>The Design Process</h6>
+ 	                <span className={style.sectiontitle}>Design Process</span>
  	                <h4>The Structure & Flow</h4>
  	                <p>With the redesigned IA, we were able to define the main navigation of the website. Soon we started sketching and storyboarding on the whiteboard. We generated ideas for UI components, interactions and the flow between pages. Each of us then created paper prototypes for team review.</p>
 	 	            <figure>
@@ -113,7 +110,7 @@ class FfRedesign extends React.Component {
 	           	  </figure>
 	            </section>  
 	            <h1>Introducing...New Frog</h1> 
-	  	        <button className={style.actionbtn}><a href='http://jasmartgithub.github.io/farmerfrog/#'>View final design</a></button>
+	  	       <a href='http://jasmartgithub.github.io/farmerfrog/#'> <button className={style.actionbtn}>View final design</button></a>
 		        <section className={'ten columns ' + style.center}>
 		            <figure className={'eight columns'}>
 		              <img className={style.shadow} alt="" src={homepage}></img> 
