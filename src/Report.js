@@ -51,7 +51,7 @@ class FfRedesign extends React.Component {
 		        <section className={'eight columns'}>
 		        	<ul className={style.illustration}>
 		              <li className={'four columns'}> <img alt="" src={prob1}></img><h6>Manual Work</h6> Manual work is time-consuming and prone to errors.</li>
-		              <li className={'four columns'}> <img alt="" src={prob2}></img><h6>Buried insights</h6>Data insights and value are buried in text heavy slides.</li>
+		              <li className={'four columns'}> <img alt="" src={prob2}></img><h6>Buried Insights</h6>Data insights and value are buried in text heavy slides.</li>
 		           </ul>
 		        </section>
 		        <section className={'eight columns'}>
@@ -111,7 +111,7 @@ class FfRedesign extends React.Component {
 		         	<h4>Challenges</h4>
 		         	<h5>Design visualization for unexpected data</h5>
 		         	<p>Edge cases always exist in the real data, even after I took some time on studying the scale and the characteristics of the data. We hardly know how a future customer’s data looks like exactly and might break the design. For example, the bubble chart went crazy a few times and the animations just took minutes to complete because some attack outbreak on the network resulted in a huge amount of bubbles.</p>
-		         	<h5>Automation & Control</h5>
+		         	<h5>Automation V.S. Customization</h5>
 		         	<p>In a survey we sent out later on for feedback, the topic <b>customization</b> came up frequently in the responses. We wanted to make the creation process effortless by automating it as much as possible. Yet the more you automate, the more problem you will have with trust and control. It’s actually difficult for the program to always capture the best stories, which might otherwise be discovered through manual lookup.</p>
 		         </section>
 		         <section className={'eight columns'}>

@@ -65,10 +65,10 @@ class Mobile extends React.Component {
           </section>
 
           <section className={'eight columns'}>
-            <p>We examined results from all the research together, we derived a list of key findings, identified main user stories and further created three personas. A few key findings are:
+            <p>We examined results from all the research together, we derived a list of key findings, identified main user stories and further created three personas. The key findings are:
               <ul>
-                <li>Everyone who reported that they maintain a budget noted that they have ran over budget.</li>
-                <li>Most participants not budgeting, because they were not sure how to create it, and considered it time-consuming.</li>
+                <li>Everyone who reported that they maintain a budget noted that they have <b>ran over</b> budget.</li>
+                <li>Most participants not budgeting, because they were not sure <b>how to</b> create it, and considered it time-consuming.</li>
                 <li>Co-budgeting is a need(e.g., roommates and friends)</li>
               </ul>
             </p>
@@ -79,11 +79,11 @@ class Mobile extends React.Component {
               <h4>Ideation</h4>
               <p>We started with individual ideation first, and brainstormed over 30 ideas delivered via quick sketches. Then we examined all the sketches together using affinity diagramming, from which we selected three promising ideas to further explore and focus on.</p>
               <img className={style.embedimg} alt="" src={sketch}></img>
-              <p>We came to notice that all of us three have some ideas around the motivation for students to create a budget. After reviewing research and personas, one of my ideas based on the concept of a wishlist was selected by the team to focus efforts on. This idea focuses on motivating students to create and maintain a budget plan.</p>
+              <p>We came to notice that all of us three have some ideas around the motivation for students to create a budget. After reviewing research and personas, one of my ideas based on the concept of a <b>wishlist</b> was selected by the team to focus efforts on. This idea focuses on motivating students to create and maintain a budget plan.</p>
           </section>
           <section className={'eight columns'}>    
               <h4>Wireframe</h4> 
-              <p>Based on the basic concept of wishlist, we sketched out the user task flow, basic UI components and interactions on the whiteboard. Then we started prototyping in Axure, gradually from low-fidelity to higher fidelity prototype. You can play with the <a href="https://90cg1g.axshare.com/#p=task_1_-_sign_up_and_create">interactive prototype</a>. We focused on refining the interaction of four core user scenarios we want to test with users:</p> 
+              <p>Based on the concept of wishlist, we sketched out the user task flow, basic UI components and interactions on the whiteboard. Then we started prototyping in Axure, gradually from low-fidelity to higher fidelity prototype. You can play with the <a href="https://90cg1g.axshare.com/#p=task_1_-_sign_up_and_create">interactive prototype</a>. We focused on refining the interaction of four core user scenarios we want to test with users:</p> 
               <ul className={style.compactlist}>
                 <li>Create a wishlist</li>
                 <li>Add an expense manually</li>

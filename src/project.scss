@@ -96,6 +96,7 @@ img.shadow {
   position: fixed;
   svg:hover{
     fill:  #666;
+    stroke: 5px;
   }
 }
 
@@ -289,7 +290,7 @@ blockquote {
   font-style: italic;
   /*font-weight: 300;*/
   padding-left: 20px;
-  margin-left: -23px;
+  /*margin-left: -23px;*/
 }
 
 ul, ol{
@@ -426,7 +427,7 @@ video {
     opacity: 0.8;
   }
   .secondarybtn {
-    margin-top: 2em;
+    margin-top: 0,5em;
     background-color: #fff;
     border: 1px solid #444;
     text-transform: none;

@@ -5,7 +5,7 @@ import Footer from './Footer.js'
 import PageNav from './PageNav.js'
 import demo from '../assets/SecurityTool/dashboarddemo.mp4'
 import bigraph from '../assets/SecurityTool/graphdemo.mp4'
-import evolution from '../assets/SecurityTool/evolution.png'
+import evolution from '../assets/SecurityTool/timeline.png'
 import geo from '../assets/SecurityTool/Geomap.png'
 import mindmap from '../assets/SecurityTool/mindmap.png'
 import taskstep from '../assets/SecurityTool/tasksteps.png'
@@ -23,18 +23,6 @@ class SecurityTool extends React.Component {
 				<h1>Cisco Umbrella Investigate</h1>		
 			    <p>A threat intelligence tool that provides data insights into domains, IP addresses and other network entities, to help security analysts predict and uncover network threats.</p>  
 			</div> 
-			{/*
-			<div className={style.overview}>
-			  <section className={'eight columns'}>
-	          	  <h4>My Role</h4>
-	              <p>I joined Cisco Umbrella (formerly OpenDNS) security research lab team as an interaction design intern, and I am currently a product designer. With our huge collection of DNS data, I’ve had chance of designing with big data in a much complicated context, which is challenging and exciting. I’ve focused my time on several areas:</p>
-		          <ul>
-		              <li><b>User Research.</b> I conducted task analysis to understand user tasks in depth via various research methods and synthesized the results into actionable items.</li>
-		              <li><b>Design.</b> As the product designer, I have redesigned the majority of <a href='https://umbrella.cisco.com/products/threat-intelligence'>Investigate</a> UI informed by research insights and validated through testing. It’s currently under development and will be rolling out new features soon.</li>
-		              <li><b>Prototyping.</b> I have designed and developed analytical tools powered by data visualizations for security analysts to use.</li>
-		          </ul> 
-		       </section> 
-	        </div>*/}
 			<div className={style.content}> 
 			  	<section className={'six columns'}>
 		          <img alt="" src={mockup}></img> 
@@ -75,7 +63,7 @@ class SecurityTool extends React.Component {
 		          <h6>Identify the Problem</h6>
 		          <p>Examining the workflow together with the mind map helps me pinpoint the problems, such as critical bottlenecks, inconsistencies and frictions within main actions as well as the whole flow. Below are a few key issues among others:</p>
 		           <ol>
-		              <li>Information is presented poorly in supporting user knowledge, including hierarchy, taxonomy and mechanisms of display.</li>
+		              <li>Information is presented poorly in supporting user knowledge, regarding hierarchy, taxonomy and mechanisms of display.</li>
 		              <li>There is no effective way for performing bulk actions.</li>
 		              <li>User loses context during pivot with too many tabs.</li>
 		          </ol> 
@@ -83,7 +71,7 @@ class SecurityTool extends React.Component {
 	                 
   				<section className={'eight columns'}>
 		          <h4>Design</h4>
-	              <p>The research has uncovered problems we could potentially solve within and beyond the current product and its functionalities. I’ve been designing and exploring solutions in various directions with the team. Below I’ve chosen to display a few projects that have been released publicly. More case studies are coming soon!</p>
+	              <p>The research has uncovered problems we could potentially solve within and beyond the current product and its functionalities. I’ve been designing and exploring solutions in various directions with the team. Below I’ve chosen to display a few projects that have been released. More case studies are coming soon!</p>
 	          	  <h5>Location Data Redesign</h5>
 	              <p>Users need to analyze location data of network incidents, and they usually evaluate the locations of clients, hosts and registrants together. The old product UI displays all the above data points in a way that scattered through the page in a tabular format. I therefore redesigned it by displaying all the related data points together around a map visualization which provides geo intelligence immediately.</p>
 	            </section>
@@ -102,8 +90,8 @@ class SecurityTool extends React.Component {
 		        </figure>
 		        <section className={'eight columns'}>
 	          	  <h5>Visualizing the evolution</h5>
-                  <p>Evolutionary data is a collection of past events and circumstances. Understanding it can be extremely valuable especially in analyzing the cadence of network. This visualization tool focuses on visualizing the key events for a group of domains, makes it easier to uncover patterns and isolate outliers.</p>
-                  <p className={style.source}>Read more in my blog post: <a href='https://umbrella.cisco.com/blog/2016/11/03/visualizing-the-evolution/'>https://umbrella.cisco.com/blog/2016/11/03/visualizing-the-evolution/</a></p>
+                  <p>Evolutionary data is a collection of past events and circumstances. Understanding it can be extremely valuable especially in analyzing the cadence of network. This visualization tool focuses on visualizing the key events for a group of domains, makes it easier to uncover patterns and isolate outliers <a href='https://umbrella.cisco.com/blog/2016/11/03/visualizing-the-evolution/'>(read more in blog post)</a>.</p>
+                   	<button className={style.secondarybtn}><a href='https://chenye0.github.io/TimelineViz/'>Play with Viz</a></button>
 		        </section>
      		  	<figure className={'eight columns'}>
 			       <img className={'twelve columns ' + style.shadow}  alt="" src={evolution}></img> 

@@ -32,7 +32,7 @@ class FfRedesign extends React.Component {
         	<CloseNav/>
 			<div className={style.titlesection} style={{backgroundImage: 'url(' + bg + ')', height: '420px'}}>
 			    <h1>City Facts</h1>
-			    <p>How can we present complex government data to help people visualizing relocating factors?</p>
+			    <p>How can we present complex government data to help people visualizing relocation factors?</p>
 			</div>
 			<div className={style.overview}>
 				<section className={'eight columns'}>
@@ -46,7 +46,7 @@ class FfRedesign extends React.Component {
 		        <section className={'eight columns'}>
 		          <h4>The Problem</h4>
 	              <p>Open government data is invaluable due to its neutrality and comprehensiveness. However, it’s hard to work with and get the value out since the data usually sits in massive surveys and tables that are scattered over various government websites. Thus our initial goal is to help people make informed life decisions such as relocation by presenting government data in a consumable and useful way. We focused on the following question:</p>
-	               <p className={style.question}>How can we present complex government data to help people visualizing relocating factors?</p>
+	               <p className={style.question}>How can we present complex government data to help people visualizing relocation factors?</p>
 	          	  <h4>User Research</h4>
 	              <p>Our team started with a mind mapping exercise to explore all the factors around living in a city. Then we conducted user interviews with seven participants to ask them what they care when they consider relocation and asked them to rank 8 common relocation factors. The top five relocation factors are: job opportunity, cost of living, environment, recreation, family-related.</p>
 	              	<img alt="" src={mindmap}></img> 
