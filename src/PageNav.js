@@ -6,18 +6,19 @@ import style from './project.scss'
 class PageNav extends React.Component {
   render() {
     const map = {
-      '/Securitytool': 'Security Product Design',
+      '/Securitytool': 'Product Design at Cisco',
       '/FfRedesign': 'FarmerFrog Web Design',
       '/ThreejsExp': 'WebGL Experiments',
-      '/Report': 'Umbrella Security Report',
+      '/Report': 'Cisco Umbrella Security Report',
       '/CandyBowl': 'Sweet Treat',
       '/Wish': 'Mobile App Design',
-      '/CityFact': ' City Facts'
+      '/CityFact': 'City Facts',
+      '/DataViz': 'Data Viz Collection'
     }
     return (
       <div className={style.projectnav}> 
         <div className={style.navbtn}>
-          <Link to={this.props.nextPage}><button>Next - {map[this.props.nextPage]} </button></Link>
+          <Link to={this.props.nextPage}><button>Next Project -> {map[this.props.nextPage]} </button></Link>
         </div>
       </div>
     )

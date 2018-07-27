@@ -3,7 +3,7 @@ import style from './project.scss'
 import Footer from './Footer.js'
 import PageNav from './PageNav.js'
 import CloseNav from './CloseNav.js'
-import bg from '../assets/dataviz/bg.png'
+import bg from '../assets/dataviz/citybg.png'
 import YouTube from 'react-youtube'
 import factors  from '../assets/dataviz/datasets.png'
 import persona  from '../assets/dataviz/persona.png'
@@ -16,12 +16,12 @@ import round2 from '../assets/dataviz/round2.png'
 import layout from '../assets/dataviz/layout.png'
 import bettergraph from '../assets/dataviz/bettergraph.png'
 import demo from '../assets/dataviz/static.png'
-import usability from '../assets/dataviz/usertest.png'
+import usability from '../assets/dataviz/testing.png'
 
 class FfRedesign extends React.Component {
   render() {
   	const opts = {
-      height: '520',
+      height: '588',
       width: '100%',
       playerVars: { // https://developers.google.com/youtube/player_parameters 
         autoplay: 0
@@ -30,7 +30,7 @@ class FfRedesign extends React.Component {
     return (
   		<div className={style.wrapper}>
         	<CloseNav/>
-			<div className={style.titlesection} style={{backgroundImage: 'url(' + bg + ')', height: '420px'}}>
+			<div className={style.titlesection} style={{backgroundImage: 'url(' + bg + ')', height: '620px'}}>
 			    <h1>City Facts</h1>
 			    <p>How can we present complex government data to help people visualizing relocation factors?</p>
 			</div>
@@ -40,13 +40,15 @@ class FfRedesign extends React.Component {
 	          	  <p>City Facts is an interactive visualization tool, which allow users to explore factors that affect living in different cities, such as <b>demographics, climate and economy</b>. All the data we provided in this tool comes from various government websites. It is built in Tableau.</p>
 	          	  <h5>My Role</h5>
 	              <p>During design phase I created wireframe and interactive prototypes for half of the graphs and I built the final dashboard tool with all the iterations. I collaborated with three team members and shared all the tasks regarding user research, testing and data preparation.</p>
-		        </section> 
+		          <h5>Final Video</h5>
+            	  <YouTube videoId={'44QLo_2KNrE'} opts={opts}/>
+		        </section> 		        
 		    </div>
 			<div className={style.content}>
 		        <section className={'eight columns'}>
 		          <h4>The Problem</h4>
 	              <p>Open government data is invaluable due to its neutrality and comprehensiveness. However, it’s hard to work with and get the value out since the data usually sits in massive surveys and tables that are scattered over various government websites. Thus our initial goal is to help people make informed life decisions such as relocation by presenting government data in a consumable and useful way. We focused on the following question:</p>
-	               <p className={style.question}>How can we present complex government data to help people visualizing relocation factors?</p>
+	               <p className={style.userstory}>How can we present complex government data to help people visualizing relocation factors?</p>
 	          	  <h4>User Research</h4>
 	              <p>Our team started with a mind mapping exercise to explore all the factors around living in a city. Then we conducted user interviews with seven participants to ask them what they care when they consider relocation and asked them to rank 8 common relocation factors. The top five relocation factors are: job opportunity, cost of living, environment, recreation, family-related.</p>
 	              	<img alt="" src={mindmap}></img> 
@@ -83,8 +85,8 @@ class FfRedesign extends React.Component {
 		        <section className={'eight columns'}>
 		        	<h4>Initial Prototype</h4>
 		        	<p>We built out two interactive prototypes with different data and conducted the first round of usability testing to gather feedback early. The one displayed below visualizes the ratio of single women to single men aged 25 to 29 years old in different counties across the country. You can play with the following two prototypes in Tableau:</p>
-		        		<button className={style.secondarybtn}><a href='https://public.tableau.com/profile/chenye#!/vizhome/Jobmarket/JobMarket'>Income by Industry</a></button>
-                    	<button className={style.secondarybtn}><a href='https://public.tableau.com/profile/jt3577#!/vizhome/RatioOfSingleWomenToMen/Singlefemaletosinglemaleratio25-29yrs'>Demographics</a></button>
+		        		<a target="_blank" href='https://public.tableau.com/profile/chenye#!/vizhome/Jobmarket/JobMarket'><button>Income by Industry</button></a>
+                    	<a target="_blank" href='https://public.tableau.com/profile/jt3577#!/vizhome/RatioOfSingleWomenToMen/Singlefemaletosinglemaleratio25-29yrs'><button>Demographics</button></a>
 	               <img alt="" src={prototype}></img> 
 		        </section> 
 		         <section className={'eight columns'}>
@@ -121,11 +123,8 @@ class FfRedesign extends React.Component {
 		         	<img alt="" src={layout}></img> 
 		         </section>    
 		         <figure className={'eight columns'}>
-		         	<h4>Final Product</h4>
-		         	<h5>Video Demo</h5>
-		         	<YouTube videoId={'8NDJ0LB3HHg'} opts={opts}/>
+		         	<h4>Final Design</h4>
 		         	<p>Note: This is an interactive visualization. However the size of our data exceeded what Tableau can handle (more than 1,000,000 rows), it could not be published to Tableau Public. Feel free to contact me if you would like to run the tool with source file.</p>
-		         	<h5>Design</h5>
 		         	<img className={style.cityvizdemo} alt="" src={demo}></img> 
 		         </figure> 
 		         <section className={'eight columns'}>

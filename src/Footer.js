@@ -4,12 +4,11 @@ import style from './project.scss'
 class Footer extends React.Component {
   render() {
     return (
-	  <div className={'ten columns ' + style.footer}>
+	  <div className={'eight columns ' + style.footer}>
      		  <div className={style.contact} >
-            <p>yechen0712@gmail.com</p>
-            <a href='http://www.linkedin.com/in/iamchenye'><div id={style.linkedin} className={style.social}></div></a>
-            <a href='https://github.com/chenye0'><div id={style.github} className={style.social}></div></a>
-            <a href='https://twitter.com/_chenye'><div id={style.twitter} className={style.social}></div></a>
+            <a target="_blank" href='http://www.linkedin.com/in/iamchenye'><div id={style.linkedin} className={style.social}></div></a>
+            <a target="_blank" href='https://medium.com/@chenye'><div id={style.medium} className={style.social}></div></a>     
+            <a target="_blank" href='https://twitter.com/_chenye'><div id={style.twitter} className={style.social}></div></a>
             {/*
             <span className={style.divider}><a href="https://www.linkedin.com/chenye07">LinkedIn</a> </span>
             <span className={style.divider}><a href="https://github.com/chenye0">Github</a></span>
@@ -19,7 +18,6 @@ class Footer extends React.Component {
           <div>
      		    <span>Handcrafted by Chen Ye with React</span>
           </div>
-      
 	  </div>
     )
   }

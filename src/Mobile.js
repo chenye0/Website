@@ -4,11 +4,11 @@ import Footer from './Footer.js'
 import PageNav from './PageNav.js'
 import style from './project.scss'
 import bg from '../assets/Wishlist/herobg.png'
-import sketch from '../assets/Wishlist/sketches.png'
+import sketch from '../assets/Wishlist/sketch.png'
 import wireframe from '../assets/Wishlist/wireframe.png'
 import flow from '../assets/Wishlist/userflow.png'
 import survey from '../assets/Wishlist/survey.png'
-import context from '../assets/Wishlist/context.png'
+import context from '../assets/Wishlist/context1.png'
 import competitive from '../assets/Wishlist/competitive.png'
 import persona from '../assets/Wishlist/persona.png'
 import usability from '../assets/Wishlist/usability.png'
@@ -47,11 +47,11 @@ class Mobile extends React.Component {
           </section>
           <section className={'ten columns ' + style.center}>
             <figure className={'seven columns'}>
-               <img className={style.embedimg} alt="" src={context}></img> 
+               <img className={style.shadow} alt="" src={context}></img> 
             </figure>
             <div className={'five columns ' + style.side }>
                 <h5>Contextual Inquiry</h5>
-                <p>This method gave us a much stronger picture as to who our audience is, what are their true struggles when it comes to budgeting, and how they might be addressing those struggles (either successfully or not successfully) today. One key insight derived here was that roommates often share expenses and monetary resources.</p>
+                <p>This research gave us a much stronger picture as to who our audience is, what are their true struggles when it comes to budgeting, and how they are addressing those struggles (either successfully or not successfully) today. For instance, one participant showed us the actual spreadsheet he uses for budget.</p>
             </div>
           </section>
           <section className={'ten columns ' + style.center}>
@@ -63,27 +63,52 @@ class Mobile extends React.Component {
                 <p>We looked into top ranked budgeting apps on Google Play and Apple Store, and we learned that people have basic expectations when it comes to a mobile application such as cloud synchronization, managing group finance as well as proper reporting and reminders.</p>
             </div>
           </section>
-
           <section className={'eight columns'}>
-            <p>We examined results from all the research together, we derived a list of key findings, identified main user stories and further created three personas. The key findings are:
-              <ul>
-                <li>Everyone who reported that they maintain a budget noted that they have <b>ran over</b> budget.</li>
-                <li>Most participants not budgeting, because they were not sure <b>how to</b> create it, and considered it time-consuming.</li>
-                <li>Co-budgeting is a need(e.g., roommates and friends)</li>
-              </ul>
-            </p>
-            <h4>Persona</h4>
-            <img className={style.shadow} alt="" src={persona}></img> 
+            <h4>Key Findings </h4>
+            <ul>
+              <li>Everyone who reported that they maintain a budget noted that they have <b>ran over</b> budget.</li>
+              <li>Most participants not budgeting, because they were not sure <b>how to</b> create it, and considered it time-consuming.</li>
+              <li>Co-budgeting is a need(e.g., roommates and friends)</li>
+            </ul>
           </section>
+          <figure className={'eight columns'}>
+            <h4>Persona</h4>
+             <img className={style.shadow} alt="" src={persona}></img> 
+          </figure>
           <section className={'eight columns'}>
               <h4>Ideation</h4>
               <p>We started with individual ideation first, and brainstormed over 30 ideas delivered via quick sketches. Then we examined all the sketches together using affinity diagramming, from which we selected three promising ideas to further explore and focus on.</p>
-              <img className={style.embedimg} alt="" src={sketch}></img>
-              <p>We came to notice that all of us three have some ideas around the motivation for students to create a budget. After reviewing research and personas, one of my ideas based on the concept of a <b>wishlist</b> was selected by the team to focus efforts on. This idea focuses on motivating students to create and maintain a budget plan.</p>
+          </section>
+          <section className={'eleven columns ' + style.center}>
+            <figure className={'seven columns'}>
+               <img className={style.shadow} alt="" src={sketch}></img> 
+            </figure>
+            <div className={'six columns ' + style.side }>
+                <h5>How might we...</h5> 
+                <p>
+                <ul>   
+                  <li>motivate students to create and stay on budget?</li>
+                  <li>help students track budget in a hassle-free way?</li>
+                </ul>
+                </p>
+                <h5>Idea</h5>
+                <p>We decided to explore the concept of a <b>wishlist</b> and focus on:
+                <ul>   
+                  <li>motivate the user in a way that is connected to their desires</li>
+                  <li>guide users through creating a budget</li>
+                  <li>track budget progress automatically</li>
+                </ul>
+                </p>
+
+            </div>
+          </section>
+          <section className={'eight columns'}>
+              <h4>User Flow</h4>
+              <img className={style.embedimg} alt="" src={flow}></img>
           </section>
           <section className={'eight columns'}>    
               <h4>Wireframe</h4> 
-              <p>Based on the concept of wishlist, we sketched out the user task flow, basic UI components and interactions on the whiteboard. Then we started prototyping in Axure, gradually from low-fidelity to higher fidelity prototype. You can play with the <a href="https://90cg1g.axshare.com/#p=task_1_-_sign_up_and_create">interactive prototype</a>. We focused on refining the interaction of four core user scenarios we want to test with users:</p> 
+              <p>Based on the concept of wishlist, we sketched out the user task flow, basic UI components and interactions on the whiteboard. Then we started prototyping in Axure, gradually from low-fidelity to higher fidelity prototype. We focused on refining the experience of four core user scenarios we want to test with users:</p> 
               <ul className={style.compactlist}>
                 <li>Create a wishlist</li>
                 <li>Add an expense manually</li>
@@ -91,16 +116,16 @@ class Mobile extends React.Component {
                 <li>View and edit a budget after using for a certain time period</li>
               </ul>
           </section>
-            <figure className={'ten columns'}>
+            <figure className={'twelve columns'}>
                <img className={style.embedimg} alt="" src={wireframe}></img> 
             </figure>
           <section className={'eight columns'}>    
               <h4>Usability Testing</h4> 
               <p>We conducted usability testing with 6 participants with our high-fidelity prototype in Axure, obtained a total of 17 key findings, including 3 high severity usability issues.</p>
               <img className={style.embedimg} alt="" src={usability}></img> 
-              <p>The creation of a prototype, and the successive usability testing that was conducted using this prototype, has proven to be invaluable for revealing key usability concerns as well as for identifying concepts or interactions that were effective or considered beneficial by participants. We redesigned the prototype based on usability testing, also improved visual design.</p>
-          <h4>Final App Mockups</h4> 
+              <p>The creation of a prototype, and the successive usability testing that was conducted using this prototype, has proven to be invaluable for revealing key usability concerns as well as for identifying concepts or interactions that were effective or considered beneficial by participants. We redesigned the prototype based on usability testing, also improved visual design.</p>    
           </section>
+          <h3>Final App Mockups</h3> 
           <section className={'eleven columns'}>    
             <img alt="" src={mockup}></img>      
           </section>

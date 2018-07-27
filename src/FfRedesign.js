@@ -29,15 +29,16 @@ class FfRedesign extends React.Component {
     return (
   		<div className={style.wrapper}>
         	<CloseNav/>
-			<div className={style.titlesection} style={{backgroundImage: 'url(' + bg + ')', height: '480px'}}>	
+			<div className={style.titlesection} style={{backgroundImage: 'url(' + bg + ')', height: '540px'}}>	
 				<h1>FarmerFrog Website Design</h1>
-			    <p>A website redesign for Farmer Frog, a non-profit organization that teaches children and families grow food.</p>
+			    <p>A website redesign for Farmer Frog, a non-profit organization that teaches children and families to grow food.</p>
 			</div>  
 			<div className={style.overview}>
 				<div className={'eight columns'}>
 	        	<h4>Project Overview</h4>
               	<h5>The Result</h5>
-	            <p>Over ten weeks, we delivered a website redesign, with 90% fewer navigation content resulted from information architecture recreation, iterated through 3 field usability testing, that impressed both users and stakeholders. The client has adopted most of our design during their website revamp: Meet the <a href="http://farmerfrog.org/">new frog here.</a></p>
+	            <p>Over ten weeks, we delivered a website redesign, with 90% fewer navigation content resulted from information architecture recreation, iterated through 3 field usability testing. The client adopted most of the design during their <a href="http://farmerfrog.org/">revamp</a>.</p>
+	            <a href='http://jasmartgithub.github.io/farmerfrog/#'> <button>View The Final Design</button></a>
 	          	<h5>My Role</h5>
 	            <p>I worked through user research to prototyping with team members, including interviews, card sorting exercise, IA recreation and paper prototyping. I created comparative wireframes in Axure for first round of testing and then completed field usability testing with another researcher.</p>
 		        </div>
@@ -53,10 +54,6 @@ class FfRedesign extends React.Component {
 		              <li>Outgrowing existing Wordpress template.</li>
 		          </ul> 
 		        </section>
-		        <figure className={'eight columns'}>
-		          <img alt="" src={heuristic}></img> 
-		          <figurecaption>Old FarmerFrog website home page, with three-level drop down menu.</figurecaption>
-		        </figure>
 		        <section className={'eight columns'}>
 		          <span className={style.sectiontitle}>The Discovery</span>
 	              <h4>Business Goals</h4>
@@ -110,7 +107,7 @@ class FfRedesign extends React.Component {
 	           	  </figure>
 	            </section>  
 	            <h1>Introducing...New Frog</h1> 
-	  	       <a href='http://jasmartgithub.github.io/farmerfrog/#'> <button className={style.actionbtn}>View final design</button></a>
+	  	        <a href='http://jasmartgithub.github.io/farmerfrog/#'> <button className={style.actionbtn}>View final design</button></a>
 		        <section className={'ten columns ' + style.center}>
 		            <figure className={'eight columns'}>
 		              <img className={style.shadow} alt="" src={homepage}></img> 
@@ -121,13 +118,13 @@ class FfRedesign extends React.Component {
 		  	        </div>
 	            </section>  
 		        <section className={'ten columns ' + style.center}>
-	            <figure className={'eight columns'}>
-	              <img className={style.shadow} alt="" src={school}></img> 
-	            </figure>
-	            <div className={'five columns ' + style.side}>
-	           	  <h5>In School Page</h5>
-	              <p>The teacher, our primary persona will get what they need from In-schools pages. The page is prioritized by the teacher’s major tasks, learning how to start a garden, checking and sharing photos of their own school gardens, and looking into other education relate programs their school could introduce.</p>
-	  	        </div>
+		            <figure className={'eight columns'}>
+		              <img className={style.shadow} alt="" src={school}></img> 
+		            </figure>
+		            <div className={'five columns ' + style.side}>
+		           	  <h5>In School Page</h5>
+		              <p>The teacher, our primary persona will get what they need from In-schools pages. The page is prioritized by the teacher’s major tasks, learning how to start a garden, checking and sharing photos of their own school gardens, and looking into other education relate programs their school could introduce.</p>
+		  	        </div>
 	           </section>   
 		        <section className={'ten columns ' + style.center}>
 	            <figure className={'eight columns'}>

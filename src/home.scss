@@ -6,33 +6,45 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-  max-width: 1600px;
+  max-width: 1400px;
   align-items: top;
   justify-content: space-around;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: auto;
 
+  h2 {
+    margin-top: 3em;
+    margin-bottom: 0px;
+  }
+
   .aboutme {
-    flex: 1 1 30%;
     min-width: 280px;
-    max-width: 310px;
-    min-height: 400px;
+    width: 80%;
+    margin: 30px 0px;
+    /*width: 600px;*/
+    /*max-width: 310px;*/
+    /*min-height: 400px;*/
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: fixed;
+    /*position: fixed;*/
     top:0;
     left: 0;
   }
   .projects {
-    flex: 1 1 55%;
-    padding: 24px 8px;
-    padding-left: 310px;
+    /*flex: 1 1 55%;*/
+    width: 86%;
+    padding: 24px 0px;
+    /*padding-left: 310px;*/
     display: flex;
     height: 100%;
     flex-flow: row wrap;
     justify-content: space-between;
+
   }
   .contact {
     display: flex;
@@ -62,7 +74,7 @@ body {
 
     .pic {
       min-width: 100%;
-      height: 240px;
+      height: 260px;
       background-position: center center;
       background-size: cover;
       border-radius: 4px;
@@ -71,7 +83,7 @@ body {
   }
 
 
-  .thumbnail:hover{
+  .thumbnail:hover {
     -moz-transform: scale(1.03);
     -webkit-transform: scale(1.03);
     transform: scale(1.03);
@@ -88,34 +100,15 @@ body {
     margin-left: 0;
   }
 
-  #twitter {
-    background-image: url('../assets/thumbnail/twitter.png');
-  }
-  #github {
-    background-image: url('../assets/thumbnail/github.png');
-  }
-  #github:hover {
-    background-image: url('../assets/thumbnail/github1.png');
-  }
-  #twitter:hover {
-    background-image: url('../assets/thumbnail/twitter1.png');
-  }
-  #linkedin {
-    background-image: url('../assets/thumbnail/linkedin.png');
-  }
-  #linkedin:hover {
-    background-image: url('../assets/thumbnail/linkedin1.png');
-  }
-
   .mypic {
     width: 55%;
     height: auto;
     margin: 40px 20px 16px 20px;
   }
   .myintro {
-    width: 80%;
+    width: 670px;
     color: #333;
-    padding-top: 40px;
+    padding-top: 32px;
     h3 {
       margin-top: 0px;
     }
@@ -125,6 +118,7 @@ body {
     }
     p {
       margin-bottom: 1em;
+      font-size: 1em;
     }
   }
 
@@ -189,7 +183,7 @@ body {
 }
 
 
-/* For devices larger than 750px */
+/* For devices small than 680px */
 @media (max-width: 680px) {
   .home {
     height: 100%;
@@ -199,8 +193,12 @@ body {
       max-width: 1000px;
       position: relative;
     }
+    .myintro {
+      width: 90%;
+    }
     .projects {
       padding-left: 0;
+      width: 96%;
     }
   }
 }

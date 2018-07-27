@@ -1,56 +1,21 @@
-import React from 'react';
-import PDF from 'react-pdf-js';
-// import myPDF from '../assets/pdfs/Resume.pdf'
+import React from 'react'
+import style from './home.scss'
+import CloseNav from './CloseNav.js'
+ 
 
-class Resume extends React.Component {
-  state = {};
-  
-  onDocumentComplete = (pages) => {
-    this.setState({ page: 1, pages });
-  }
- 
-  onPageComplete = (page) => {
-    this.setState({ page });
-  }
- 
-  handlePrevious = () => {
-    this.setState({ page: this.state.page - 1 });
-  }
- 
-  handleNext = () => {
-    this.setState({ page: this.state.page + 1 });
-  }
- 
-  renderPagination = (page, pages) => {
-    let previousButton = <li className="previous" onClick={this.handlePrevious}><a href="#"><i className="fa fa-arrow-left"></i> Previous</a></li>;
-    if (page === 1) {
-      previousButton = <li className="previous disabled"><a href="#"><i className="fa fa-arrow-left"></i> Previous</a></li>;
-    }
-    let nextButton = <li className="next" onClick={this.handleNext}><a href="#">Next <i className="fa fa-arrow-right"></i></a></li>;
-    if (page === pages) {
-      nextButton = <li className="next disabled"><a href="#">Next <i className="fa fa-arrow-right"></i></a></li>;
-    }
-    return (
-      <nav>
-        <ul className="pager">
-          {previousButton}
-          {nextButton}
-        </ul>
-      </nav>
-      );
-  }
- 
+class Aboutme extends React.Component {
+
   render() {
-    // let pagination = null;
-    // if (this.state.pages) {
-    //   pagination = this.renderPagination(this.state.page, this.state.pages);
-    // }
-    return (
-      <div>
-        <PDF scale={1.5} onDocumentComplete={this.onDocumentComplete} onPageComplete={this.onPageComplete} page={this.state.page} />
-      </div>
-    )
+      return (
+        <div className={style.wrapper}>
+          <CloseNav/>
+          <div className={style.about}>
+          </div>
+          <div className={style.about}>
+          </div>
+        </div>
+      );
   }
 }
 
-export default Resume;
+export default Aboutme;

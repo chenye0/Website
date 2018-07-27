@@ -11,9 +11,8 @@ import FfRedesign from './FfRedesign.js'
 import DataViz from './Viz.js'
 import CityFact from './CityFact.js'
 import Wishes from './Mobile.js'
-import Resume from './Resume.js'
+import design from './Resume.js'
 import SecurityTool from './CiscoSecurity.js'
-import CiscoSecurity from './CiscoSecurity.js'
 import report from './Report.js'
 import './index.css'
 
@@ -22,6 +21,11 @@ ReactGA.initialize('UA-59047305-2');
 function fireTracking() {
     ReactGA.set({ page: window.location.pathname + window.location.search });
   	ReactGA.pageview(window.location.pathname + window.location.search);
+}
+function requirePsd(replace, cb) {
+	var Ans = prompt("Enter password to view project", "");
+	if (Ans === '2040') return
+	else replace('/')
 }
 
 ReactDOM.render(
@@ -35,10 +39,7 @@ ReactDOM.render(
 	 		<Route path="dataviz" component={DataViz} />
 	 		<Route path="cityfact" component={CityFact} />
 	 		<Route path="wish" component={Wishes} />
-	 		<Route path="report" component={report} />
-	 		<Route path="securitytool" component={SecurityTool} />
-	 		<Route path="ciscosecurity" component={CiscoSecurity} />
-	 		<Route path="resume" component={Resume} />
+	 		<Route path="design" component={design} />
 	    </Route>
   	</Router>,
     document.getElementById('root')

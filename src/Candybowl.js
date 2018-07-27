@@ -156,7 +156,7 @@ class CandyBowl extends React.Component {
             <button className={style.actionbtn}><a href='https://youtu.be/P3kTBk0FmaE'>Watch How We Made It</a></button>
           </section>   */}            
         </div>
-        <PageNav nextPage='/ThreejsExp'/>
+        <PageNav nextPage='/DataViz'/>
         <Footer/>
       </div>
     )
